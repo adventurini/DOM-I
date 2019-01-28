@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+let nav = document.querySelector('nav');
+
 let navA = document.querySelectorAll('a');
 navA[0].textContent= siteContent["nav"]["nav-item-1"];
 navA[1].textContent= siteContent["nav"]["nav-item-2"];
@@ -48,6 +50,16 @@ navA[2].textContent= siteContent["nav"]["nav-item-3"];
 navA[3].textContent= siteContent["nav"]["nav-item-4"];
 navA[4].textContent= siteContent["nav"]["nav-item-5"];
 navA[5].textContent= siteContent["nav"]["nav-item-6"];
+
+var home = document.createElement("a");
+home.innerText = "Home"
+home.href = '#';
+var blog = document.createElement("a");
+blog.innerText = "Blog";
+blog.href='#';
+
+nav.prepend(home);
+nav.appendChild(blog);
 
 let h1Selector = document.querySelector('.cta h1');
 h1Selector.textContent = siteContent ["cta"]["h1"];
@@ -102,6 +114,8 @@ let contactInfo = document.querySelectorAll('section.contact > p');
 contactInfo[0].innerHTML = siteContent.contact.address;
 contactInfo[1].innerHTML = siteContent.contact.phone;
 contactInfo[2].innerHTML = siteContent.contact.email;
+
+
 
 
 
