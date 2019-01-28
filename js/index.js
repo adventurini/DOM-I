@@ -51,12 +51,21 @@ navA[3].textContent= siteContent["nav"]["nav-item-4"];
 navA[4].textContent= siteContent["nav"]["nav-item-5"];
 navA[5].textContent= siteContent["nav"]["nav-item-6"];
 
+navA[0].style.color= 'green';
+navA[1].style.color= 'green';
+navA[2].style.color= 'green';
+navA[3].style.color= 'green';
+navA[4].style.color= 'green';
+navA[5].style.color= 'green';
+
 var home = document.createElement("a");
 home.innerText = "Home"
 home.href = '#';
+home.style.color='green';
 var blog = document.createElement("a");
 blog.innerText = "Blog";
 blog.href='#';
+blog.style.color = 'green';
 
 nav.prepend(home);
 nav.appendChild(blog);
